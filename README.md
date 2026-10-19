@@ -102,3 +102,27 @@ python3 scripts/repack.py \
 ```sh
 adb shell "pm uninstall-system-updates com.miui.packageinstaller"
 ```
+
+## 上游与致谢
+
+| | |
+|---|---|
+| 上游项目 | [wxxsfxyzm/InstallerX-Revived](https://github.com/wxxsfxyzm/InstallerX-Revived) |
+| 上游作者 | [@wxxsfxyzm](https://github.com/wxxsfxyzm) |
+| 项目主页 | <https://wxxsfxyzm.github.io/InstallerX-Revived-Website> |
+| 上游许可证 | **GPL-3.0** |
+| 本仓库性质 | 非官方，仅做包名替换 + 重签名 |
+
+InstallerX-Revived 的全部功能（安装器 UI、Shizuku/Dhizuku 支持、安装逻辑）均为上游作者的成果。
+本仓库**不修改任何业务代码**，只把 `applicationId` 从 `com.rosan.installer.x.revived` 替换为
+`com.miui.packageinstaller`、抬 versionCode 顶替系统安装器。原项目请见上方链接，建议优先支持上游。
+
+## 许可证
+
+上游以 **GPL-3.0** 授权，因此本仓库的 APK 产物同样是 GPL-3.0 的派生作品，分发时：
+
+- 保留原作者的版权声明与许可证声明（见 `LICENSE`）
+- 提供对应源码 —— 源码 = 上游 tag 对应的代码（链接见每个 Release 的 notes）+ 本仓库的
+  `scripts/repack.py`（唯一改动就是包名替换与 versionCode 覆盖，无业务补丁）
+- 本仓库自身的构建脚本同样以 GPL-3.0 提供
+
