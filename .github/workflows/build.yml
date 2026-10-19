@@ -128,6 +128,10 @@ jobs:
             "credit belong to the upstream author; this repo only renames the package." \
             "Corresponding source: the upstream tag above + scripts/repack.py in this repo." \
             "" \
+            "⚠️ **Unofficial build — install at your own risk.** This replaces the system package" \
+            "installer; a bad install can brick the device. No warranty, no support." \
+            "Full disclaimer: see the README section 「免责声明」." \
+            "" \
             "Repacked for system package **$NEW_PKG** (was $OLD_PKG)." \
             "versionCode pinned to $VERSION_CODE so the data-partition install survives reboot." \
             "" \
